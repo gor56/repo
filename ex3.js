@@ -1,5 +1,5 @@
 function strings(currentString) {
-    return currentString + ".js";
+    return ` ${currentString}.js `;
 }
 
 console.log(strings("currentString"));

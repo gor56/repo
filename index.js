@@ -16,7 +16,7 @@ function coeficient(coef) {
 }
 
 
-
+console.log(coeficient(2))
 /*
 let multiplication = (num1, num2) => num1 * num2;
 

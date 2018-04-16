@@ -1,5 +1,5 @@
 function myFunc() {
-    console.log("fix me");
+    console.log(`fix me`);
 }
 
 myFunc();

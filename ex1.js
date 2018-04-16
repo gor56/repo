@@ -6,5 +6,5 @@ function area(ar){
   return  square(2) * ar;
 }
 
-console.log(area(2));
+console.log(area());
 
