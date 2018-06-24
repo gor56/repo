@@ -1,10 +1,10 @@
 const router = require('express').Router();
-
 const userService = require('../services/users');
+const validations = require('../validations/user-validation/index');
 
 router.get('/', userService.listUsers);
 
-router.post('/', userService.addUser);
+router.post('/', userService.registerUser);
 
 router.get('/:userId', userService.getUser);
 

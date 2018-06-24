@@ -11,8 +11,7 @@ const PlaylistsSchema = new Schema ({
     tracks: [{
         type: Schema.Types.ObjectId,
         ref: 'Tracks'
-    }],
-    createdAt: Date.now()
+    }]
 });
 
 const Playlists = mongoose.model('Playlists', PlaylistsSchema);

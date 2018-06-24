@@ -2,7 +2,11 @@
   "name": "repo",
   "version": "0.0.1",
   "dependencies": {
+    "body": "^5.1.0",
     "express": "^4.16.3",
-    "mongoose": "^5.1.5"
+    "joi": "^13.4.0",
+    "joi-objectid": "^2.0.0",
+    "mongoose": "^5.1.5",
+    "parser": "^0.1.4"
   }
 }

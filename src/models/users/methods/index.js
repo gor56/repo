@@ -7,28 +7,30 @@ module.exports = (Users) => {
     };
 
     /**
-     * @description List all users.
+     * @description Get users by Id.
      */
     Users.getUserById = (userId) => {
         return Users.findOne({ _id: userId});
     };
 
     /**
-     * @description List all users.
+     * @description Create user.
      */
     Users.createUser = (userData) => {
-        return Users.create(userData);
+        console.log('ashfgvhjgfh')
+        const {firstName, lastName, email} = userData
+        return Users.create({firstName, lastName, email})
     };
 
     /**
-     * @description List all users.
+     * @description Delete users by Id.
      */
     Users.removeUserById = (userId) => {
         return Users.deleteOne({ _id: userId});
     };
 
     /**
-     * @description List all users.
+     * @description Update user by Id.
      */
     Users.updateUserById = (userId, updateData) => {
         return Users.findOneAndUpdate({ _id: userId}, updateData);

@@ -16,8 +16,7 @@ const UsersSchema = new Schema ({
         type: Schema.Types.ObjectId,
         ref: 'Playlists'
     }],
-    favoriteTags: [String],
-    createdAt: Date.now()
+    favoriteTags: [String]
 });
 
 const Users = mongoose.model('Users', UsersSchema);
